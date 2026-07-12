@@ -1,0 +1,36 @@
+{
+  "source": "playwright",
+  "threshold": 0.01,
+  "diffs": [
+    {
+      "id": "pricing-chromium",
+      "page": "/pricing",
+      "component": "PlanCard",
+      "region": "card",
+      "selector": "[data-testid=plan-card]",
+      "diffRatio": 0.032,
+      "baseline": "artifacts/pricing-baseline.png",
+      "actual": "artifacts/pricing-actual.png",
+      "diff": "artifacts/pricing-diff.png",
+      "domChanged": true,
+      "domSummary": "PlanCard gained a CTA wrapper."
+    },
+    {
+      "id": "pricing-webkit",
+      "page": "/pricing",
+      "component": "PlanCard",
+      "region": "card",
+      "selector": "[data-testid=plan-card]",
+      "diffRatio": 0.021,
+      "domChanged": false
+    },
+    {
+      "id": "home-chromium",
+      "page": "/",
+      "component": "Hero",
+      "region": "full-page",
+      "diffRatio": 0.004,
+      "domChanged": false
+    }
+  ]
+}
