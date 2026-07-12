@@ -1,0 +1,24 @@
+{
+  "name": "ui-regression-triage",
+  "version": "0.1.0",
+  "description": "Cluster visual regression diffs and generate review-ready HTML and JSON reports.",
+  "type": "module",
+  "bin": {
+    "ui-regression-triage": "./src/cli.js"
+  },
+  "scripts": {
+    "test": "node --test",
+    "triage": "node src/cli.js"
+  },
+  "keywords": [
+    "visual-regression",
+    "playwright",
+    "cypress",
+    "storybook",
+    "ci"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  }
+}
